@@ -50,6 +50,7 @@ namespace spencer_detected_person_association
     public:
         virtual void onInit();
         virtual ~ConvertToCompositeDetectionsNodelet();
+        ConvertToCompositeDetectionsNodelet() {}
 
     private:
         // Creates the publisher once the input topic becomes active

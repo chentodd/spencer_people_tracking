@@ -43,6 +43,8 @@ namespace spencer_detected_person_association
     {
     public:
         virtual void onInit();
+        virtual ~NearestNeighborFuserNodelet() {}
+        NearestNeighborFuserNodelet() {}
 
     protected:
         /// Implements method of abstract DetectedPersonsSynchronizer base class

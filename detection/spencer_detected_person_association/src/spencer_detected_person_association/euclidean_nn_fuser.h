@@ -41,6 +41,10 @@ namespace spencer_detected_person_association
     /// The input messages must be in the same coordinate frame (header.frame_id), which can be ensured via ConvertToCompositeDetectionsNodelet.
     class EuclideanNNFuserNodelet : public NearestNeighborFuserNodelet
     {
+    public:
+        EuclideanNNFuserNodelet() {}
+        virtual ~EuclideanNNFuserNodelet() {}
+
     protected:
         /// Compute the distance between a pair of composite detections using the Euclidean distance in X and Y. If outside of gating zone, returns infinity.
         virtual float computeDistance(const spencer_tracking_msgs::CompositeDetectedPerson& d1, const spencer_tracking_msgs::CompositeDetectedPerson& d2);

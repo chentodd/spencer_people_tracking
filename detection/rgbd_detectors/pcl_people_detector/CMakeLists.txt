@@ -1,13 +1,15 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(pcl_people_detector)
 
+set(OpenCV_DIR /usr/local/opencv2.4.13/share/OpenCV)
+
 find_package(catkin REQUIRED COMPONENTS
   roscpp roslib pcl_conversions eigen_conversions tf_conversions cmake_modules
   spencer_tracking_msgs visualization_msgs spencer_vision_msgs
 )
 
 
-find_package(OpenCV 2 REQUIRED)
+find_package(OpenCV 2.4 REQUIRED)
 message(STATUS "Using OpenCV version ${OpenCV_VERSION} installed at: ${OpenCV_INCLUDE_DIRS}")
 message(STATUS "OpenCV supported compute capabilities are: ${OpenCV_COMPUTE_CAPABILITIES}")
 

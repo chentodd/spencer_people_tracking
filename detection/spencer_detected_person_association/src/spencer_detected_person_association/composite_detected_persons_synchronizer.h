@@ -54,6 +54,7 @@ namespace spencer_detected_person_association
         /// Must be called by derived class in onInit().
         void initSynchronizer(const std::string& nodeletName, ros::NodeHandle nodeHandle, ros::NodeHandle privateNodeHandle, int minNumInputTopics = 1, int maxNumInputTopics = 9);
 
+        CompositeDetectedPersonsSynchronizer() {}
         virtual ~CompositeDetectedPersonsSynchronizer();
 
 

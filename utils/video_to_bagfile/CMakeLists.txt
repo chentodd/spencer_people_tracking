@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(video_to_bagfile)
 
-find_package(OpenCV REQUIRED core imgproc highgui)
+set(OpenCV_DIR /usr/local/opencv2.4.13/share/OpenCV)
+find_package(OpenCV 2.4 REQUIRED core imgproc highgui)
 find_package(catkin REQUIRED COMPONENTS image_transport rospy roscpp roslib rosbag cv_bridge)
 
 catkin_package()
